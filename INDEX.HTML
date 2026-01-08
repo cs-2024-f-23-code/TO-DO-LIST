@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="STYLE.CSS">
+    <title>Simple To-Do List</title>
+  
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <h1>📝 Simple To-Do List</h1>
+        <p class="subtitle">Add, complete, and manage your daily tasks</p>
+        
+        <!-- Input Section -->
+        <div class="input-group">
+            <input type="text" id="taskInput" placeholder="What needs to be done?">
+            <button id="addButton" class="btn btn-primary">Add Task</button>
+        </div>
+        
+        <!-- Stats Display -->
+        <div class="stats">
+            <div>Total: <span id="totalTasks">0</span></div>
+            <div>Completed: <span id="completedTasks">0</span></div>
+            <div>Pending: <span id="pendingTasks">0</span></div>
+        </div>
+        
+        <!-- Task List -->
+        <div class="task-list" id="taskList">
+            <!-- Sample tasks (will be replaced by JavaScript) -->
+            <div class="task-item">
+                <input type="checkbox" class="task-checkbox">
+                <span class="task-text">Sample task - Click to edit</span>
+                <div class="task-actions">
+                    <button class="btn-icon btn-edit" title="Edit">Edit ✏️</button>
+                    <button class="btn-icon btn-delete" title="Delete"> DELETE 🗑️</button>
+                </div>
+            </div>
+            
+            <!-- Empty state (hidden by default) -->
+            <div class="empty-state" id="emptyState" style="display: none;">
+                <div>📋</div>
+                <p>No tasks yet. Add your first task above!</p>
+            </div>
+        </div>
+        
+        
+        
+<script src="script.js"></script>
+    
+</body>
+</html>
